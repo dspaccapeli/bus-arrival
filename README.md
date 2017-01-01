@@ -10,6 +10,8 @@ This folder contains the python scripts (besides the query used) employed to fil
 Here several variety of scripts for plots are presented; from simil-heatmaps to histograms.
 ##Predictors
 All the methods tried are in this folder, with the best performing one being the Random Forest that manage to give the hoped results. Here a table with the related results (to be taken relative to their naive result counterpart):
+
+
 | Number of Estimators | No. 4 | No. 6 | No. 8 | No. 10 | No. 12 |
 |----------------------|-------|-------|-------|--------|--------|
 | Predictor            | 53.8  | 52.4  | 52.4  | 51.1   | 50.9   |
