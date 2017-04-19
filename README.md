@@ -11,16 +11,22 @@ This folder contains the Python scripts (the additional SQL queries are omitted)
 
 _We can see the results of this stage in the following plot:_
 
-![Distribution of the data](/images/dist_plot.png)
+<p align="center">
+  <img src="/images/dist_plot.png" width="480" height="400">
+</p>
 
 ## Visualization
 Here several variety of scripts for plots are presented. This plots vary from histograms to simil-heatmaps.
 
 _Here some examples:_
 
-![Random runs evolution plot](/images/vis_delay.png)
+<p align="center">
+  <img src="/images/vis_delay.png" width="480" height="400">
+</p>
 
-![Cumulative visualization of sequential delay evolution](/images/seq_delay_evo.png)
+<p align="center">
+  <img src="/images/seq_delay_evo.png" width="480" height="400">
+</p>
 
 ## Predictors
 All the methods evaluated for the purpose of the final report are included in this folder. The methods tried include:
