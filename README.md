@@ -12,7 +12,7 @@ This folder contains the Python scripts (the additional SQL queries are omitted)
 _We can see the results of this stage in the following plot:_
 
 <p align="center">
-  <img src="/images/dist_plot.png" width="480" height="400">
+  <img src="/images/dist_plot.png" width="420" height="350">
 </p>
 
 ## Visualization
@@ -21,11 +21,8 @@ Here several variety of scripts for plots are presented. This plots vary from hi
 _Here some examples:_
 
 <p align="center">
-  <img src="/images/vis_delay.png" width="480" height="400">
-</p>
-
-<p align="center">
-  <img src="/images/seq_delay_evo.png" width="480" height="400">
+  <img src="/images/vis_delay.png" width="240" height="200">
+  <img src="/images/seq_delay_evo.png" width="240" height="200">
 </p>
 
 ## Predictors
