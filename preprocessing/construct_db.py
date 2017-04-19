@@ -2,8 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 Description:
-  Create a new table in the database filtering a view
-  and checking various constraints.
+  Create a new table in the database.
+  This is  achieved using a view and
+  checking various constraints.
 
 @author: dspaccapeli
 """
@@ -65,7 +66,7 @@ while True:
 
           #reject every delay bigger than an hour // probably outlier
           #anyway not the normal behavior we're trying to predict
-          #it counts as 'almost' the next one
+          #it counts as 'almost' a new run
           if(abs(delay) > 60*30):
               continue
 
@@ -80,7 +81,7 @@ while True:
           if(int(row['sch_time']) < int(row['run_sch_starttime'])):
               continue
 
-          #datetime automatically adjust for timezones (!)
+          #datetime func automatically adjust for timezones (!)
           #NULL on the autoincrement field to _autoincrement_
           write_curs.execute("INSERT INTO hsl VALUES(NULL,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",        \
                              (str(row['route_id']),                                               \

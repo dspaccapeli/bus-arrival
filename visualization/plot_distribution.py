@@ -3,8 +3,9 @@
 """
 Description:
   Plot the delay and pause distribution
-  eliminating the outliers to visualize
-  a _normalized_ plot.
+  eliminating the outliers in pandas
+  to visualize a normalized and
+  understandable/workable plot.
 
 @author: dspaccapeli
 """
@@ -49,6 +50,7 @@ d_outlier =  delay[~((delay-delay.mean()).abs()>3*delay.std())]
 #d_outlier.rename('DELAY FOR ROUTE_ID = %s, NO OUTLIERS' % route_id);
 
 """
+#                           ALTERNATIVE METHOD
 #-----------------------------------------------------------------------------#
 #                             TUCKEY'S TEST                                   #
 #      https://www.jstor.org/stable/2289073?seq=8#page_scan_tab_contents      #
@@ -109,14 +111,15 @@ plt.subplot(212)
 
 #-----------------------------------------------------------------------------#
 #                           OUTLIER DETECTION                                 #
-#          note that substracting the mean centres the data                   #
-#                    OLD AND PROBABLY HAS ERRORS                              #
+#            note that substracting the mean centres the data                 #
+#                  OLD AND PROBABLY HAS INCONSISTENCIES                       #
 #-----------------------------------------------------------------------------#
 p_outlier = pause[~((pause-pause.mean()).abs()>3*pause.std())]
 
 #pause.plot(kind='kde', title="DELAY FOR STOP_ID = %s" % stop_id)
 
 """
+#                        AGAIN ALTERNATIVE METHOD
 q_1 = pause.quantile(q=0.25)
 q_3 = pause.quantile(q=0.75)
 mean = pause.mean()

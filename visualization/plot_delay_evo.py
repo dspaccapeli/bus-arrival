@@ -4,7 +4,7 @@
 Description:
   Plot the delay evolution during a run
   for multiple ones having the run_time
-  (in seconds) on the X axis.
+  (in seconds) shown on the X axis.
 
 @author: dspaccapeli
 """
@@ -64,10 +64,9 @@ for count in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
     plt.savefig(str(count), ext="png")
     plt.clf()
 
-'''
-plt.suptitle('Delay progression between %s and %s during the week' % (hh_start, hh_end))
-plt.xlabel('run time')
-plt.ylabel('delay')
-plt.savefig(str(count), ext="png")
-plt.clf()
-'''
+#uncomment if you want to do it cumulatively
+#plt.suptitle('Delay progression between %s and %s during the week' % (hh_start, hh_end))
+#plt.xlabel('run time')
+#plt.ylabel('delay')
+#plt.savefig(str(count), ext="png")
+#plt.clf()

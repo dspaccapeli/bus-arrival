@@ -75,6 +75,7 @@ naive = 0
 #X.reshape(1, -1) if it contains a single sample.
 
 '''
+#attempt at resolving the DeprecationWarning
 b = np.array
 i=0
 

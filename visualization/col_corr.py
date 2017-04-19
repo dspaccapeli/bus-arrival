@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Description:
-  Plot the correlation between features.
+  Plot the correlation between different features.
 
 @author: dspaccapeli
 """
@@ -11,6 +11,7 @@ Description:
 import sqlite3 as lite
 import pandas as pd
 from random import shuffle
+import seaborn as sns
 
 #connect to the database
 db_connection = lite.connect('DATABASE_PATH')
@@ -29,7 +30,7 @@ unq_dep = df.start_time.unique()
 shuffle(unq_dep)
 temp = df[df['start_time'] == unq_dep[0]]
 
-import seaborn as sns
+#the call can be slow, at least on my machine
 corr = df.corr()
 
 sns.heatmap(corr,
