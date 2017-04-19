@@ -3,9 +3,10 @@
 """
 Description:
   Check if there are any jumps in the stop_id column.
-  There's a jump when in two subsequent entries for the
+  A jump is found when in two subsequent entries for the
   same run the number differ for more than one.
   e.g. 5 -> 7
+  This means that the bus doesn't stop at one or more stations.
 
 @author: dspaccapeli
 """

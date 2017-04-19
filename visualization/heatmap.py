@@ -2,8 +2,12 @@
 # -*- coding: utf-8 -*-
 """
 Description:
-  Plot an heatmap of the delay relationship
-  between different stops in the same run.
+  Plot an heatmap of the relationship
+  between the delay at different stops
+  in the same run.
+
+  NB There's a problem in the relative size
+     of the output image, see the library doc.
 
 @author: dspaccapeli
 """

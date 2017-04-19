@@ -3,8 +3,10 @@
 """
 Description:
   Train and test a multilayer perceptron
-  on the bus data and print the results 
+  on the bus data and print the results
   on the console.
+
+  NB. It's a relatively naive implementation.
 
 @author: dspaccapeli
 """

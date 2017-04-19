@@ -4,7 +4,8 @@
 Description:
   Train a knn model on the data and test
   it printing the results on the console.
-  MAY TAKE A WHILE FOR BIG DATASETS.
+  NB. IT TAKES A WHILE FOR BIG DATASETS.
+      IT'S A PROBLEM INHERENT IN THE METHOD
 
 @author: dspaccapeli
 """

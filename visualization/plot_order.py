@@ -4,7 +4,7 @@
 Description:
   Plot the delay evolution during a run
   for multiple ones having the stop_order
-  on the X axis.
+  shown on the X axis.
 
 @author: dspaccapeli
 """

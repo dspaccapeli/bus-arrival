@@ -4,7 +4,7 @@
 Description:
   Plot the relationship between the delay
   at one stop and the one at 1/3/5
-  stops from now.
+  stops from the current one.
 
 @author: dspaccapeli
 """
@@ -57,13 +57,12 @@ for count in range(1,2):
         #up to a max of 200 lines
         #if i==points:
             #break
-    '''
-    plt.suptitle('Sequential delay evolution')
-    plt.xlabel('delay')
-    plt.ylabel('delay at %s stop from now' % at_next)
-    plt.savefig(str(count), ext="png")
-    plt.clf()
-    '''
+    #uncomment the following code to plot iteratively
+    #plt.suptitle('Sequential delay evolution')
+    #plt.xlabel('delay')
+    #plt.ylabel('delay at %s stop from now' % at_next)
+    #plt.savefig(str(count), ext="png")
+    #plt.clf()
 
 plt.suptitle('Sequential delay evolution')
 plt.xlabel('delay')
